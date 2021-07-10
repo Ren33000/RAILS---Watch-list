@@ -2,16 +2,10 @@ class ListsController < ApplicationController
     def index
         @lists = List.all
     end
-#go to view, restaurants folder, create file index.html.erb
-#when the view is finished, gst, add, commit -m "create index"
-#when create the next def : raise to debbug
 
   def show
-		#@restaurant = Restaurant.find(params[:id])
+		@restaurant = Restaurant.find(params[:id])
   end
-#go to view, gst, add, commit
-
-
 
   def new 
     @restaurant = Restaurant.new
