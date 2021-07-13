@@ -2,12 +2,24 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
-
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+$light_black: rgb(18, 17, 17);
+$light_white: rgb(240, 233, 233);
+body {
+    background-color: $light_black;
+    color: $light_white;
+}
+
+.link-color {
+    color: $light_white;
+    &:hover {
+        color: rgb(205, 34, 34);
+        text-decoration: none;
+    }
+}
