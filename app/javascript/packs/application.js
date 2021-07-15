@@ -12,9 +12,12 @@ import "bootstrap";
 
 import { initUpdateNavbarOnScroll } from "../components/navbar";
 
+import { initSelect2 } from "../components/init_select2";
+
 document.addEventListener("turbolinks:load", () => {
     // Call your JS functions here
     initUpdateNavbarOnScroll();
+    initSelect2();
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference

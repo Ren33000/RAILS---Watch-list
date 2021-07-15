@@ -1,21 +1,6 @@
 <%= render 'shared/banner' %>
 
-<div class="container mt-5">
-  <h1 class="mb-5">My lists</h1>
-  <div class="row">
-    <% @lists.each do |list| %>
-      <div class="col-6 col-lg-4">
-        <%= link_to list_path(list) do %>
-          <%# <div class=""shadow rounded p-3 mb-3""> %>
-          <div class="card-pick mb-4"> 
-          <%= image_tag "random.jpg" %>       
-            <%# <img src="" alt=""> %>
-            <div class="card-pick-info">
-              <h3 class="mb-3"><%= list.name %></h3>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
-</div>
+<%= render 'shared/lists_cards' %>
+
+
+

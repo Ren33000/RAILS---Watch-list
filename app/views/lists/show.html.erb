@@ -9,8 +9,8 @@
         <h1 class="mb-5">Movies from the <%= @list.name %> list</h1>
         <div class="row">
             <% @list.bookmarks.each do |bookmark| %>
-                <div class="col-6 col-lg-4">
-                    <div class="card-product">
+                <div class="col-4 col-lg-6">
+                    <div class="card-product mb-4">
                         <%= image_tag bookmark.movie.poster_url, alt: "pic of movie" %>
                         <div class="card-product-infos">
                             <h2><%= bookmark.movie.title %></h2>

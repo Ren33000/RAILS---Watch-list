@@ -1,5 +1,12 @@
-<%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.input :comment %>
-  <%= f.association :movie %>
-  <%= f.submit class: "btn btn-primary" %>
-<% end %>
+<div class="row justify-content-center">
+ 
+  <div class="form-styled" style="position: relative;" method="GET" action="">
+
+  <h1>Add a movie</h1>
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.input :comment, placeholder: 'Enter your comment here' %>
+      <%= f.association :movie, input_html: { class: 'select2' } %>
+      <%= f.submit class: "btn btn-primary" %>
+    <% end %>
+    </div>
+</div>

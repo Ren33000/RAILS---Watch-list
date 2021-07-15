@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <h1 class="mb-5">My lists</h1>
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-6 col-lg-4">
+        <%= link_to list_path(list) do %>
+          <%# <div class=""shadow rounded p-3 mb-3""> %>
+          <div class="card-pick mb-4"> 
+          <%= list.photo.attached? ? cl_image_tag(list.photo.key) : image_tag("random.jpg") %>
+            <div class="card-pick-info">
+              <h3 class="mb-3"><%= list.name %></h3>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

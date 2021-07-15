@@ -1,0 +1,23 @@
+$light_black: rgb(18, 17, 17);
+.select2-results {
+    color: $light_black;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    padding: 24px;
+    width: 100%;
+}
+
+.form-container .form-styled {
+    background-color: #5e6a80;
+    color: #eee;
+    border-radius: 2px;
+    border: 1px solid #229fbc;
+    padding: 32px;
+    width: 50%;
+}
