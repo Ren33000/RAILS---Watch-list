@@ -1,25 +1,32 @@
 
 <%= render 'shared/header' %>
 
-<div class="container">
-    <%# <h1><%= @list.name %></h1> 
-    <%# <%= link_to "Add movie", new_list_bookmark_path(@list), class: "btn btn-primary" %>
-    
+<div class="container">    
     <div class="container mt-5">
         <h1 class="mb-5">Movies from the <%= @list.name %> list</h1>
         <div class="row">
             <% @list.bookmarks.each do |bookmark| %>
                 <div class="col-4 col-lg-6">
+                <div data-aos="flip-left">
                     <div class="card-product mb-4">
                         <%= image_tag bookmark.movie.poster_url, alt: "pic of movie" %>
                         <div class="card-product-infos">
                             <h2><%= bookmark.movie.title %></h2>
                             <p>><%= bookmark.movie.overview %></p>
+                            <p id="rating"><i class="fas fa-star"></i> <b><%= bookmark.movie.rating %></b></p>
+                            <div class="delete-icon">
+                                <%= link_to bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?"} do %>
+                                <i class="fas fa-trash"></i>
+                            <% end %></div>
                         </div>
-                    </div>                  
+                    </div> 
+                    </div>                 
                 </div>
             <% end %>
         </div>
     </div>
 </div>
+
+
+
 

@@ -32,3 +32,22 @@
 .card-product .card-product-infos {
     padding: 16px;
 }
+
+.delete-icon {
+    position: absolute;
+    bottom: 35px;
+    right: 120px;
+    .fa-trash {
+        color: $light_black;
+    }
+}
+
+#rating {
+    position: absolute;
+    bottom: 39px;
+    right: 153px;
+    color: black;
+    .fa-star {
+        color: rgb(240, 224, 40);
+    }
+}
