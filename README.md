@@ -5,9 +5,7 @@
 
 
 ## Introduction
-A little web app built on Ruby on Rails as a first solo full-stack project, built in 2 days.
-
-You can create/ edit/ delete lists of movies.
+A little web app on Ruby on Rails as a first solo full-stack project, built in 2 days. You can create/ edit/ delete lists of movies.
 
 -The database schema was created on [Le Wagon DB schemas editor](https://kitt.lewagon.com/db)
 
